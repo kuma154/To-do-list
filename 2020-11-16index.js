@@ -32,7 +32,7 @@ function closeItem(){
     var span = document.getElementsByClassName('close');
     for(let i=0;i<span.length;i++){
         span[i].onclick=function(){
-         this.parentElement.style.display='none'
+         this.parentNode.remove()
          DelArrayElement(arr, i)
          console.log(arr);
         }
